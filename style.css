@@ -39,10 +39,16 @@ body{
 }
 
 .album{
-  padding=50px
-  margin-top= 50px
+  padding=50px;
+  margin-top= 50px;
 }
 
 .menu{
-  display:inline
+  display:inline;
+  list-style:none;
+}
+
+a:hover {
+  text-decoration:underline;
+  color:green;
 }
