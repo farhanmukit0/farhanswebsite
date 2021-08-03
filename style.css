@@ -1,54 +1,51 @@
-body{
-  background-color: #eee
+/* External CSS */
+body {
+  font-size: 1em;
+  color: #444; /* shade of black */
+  font-family: Verdana;
 }
-
-.gallery {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin-top: 5vh;
-    margin-right: 0.5vh;
-    border: 1px solid #ccc;
-    float: left;
+a {
+  color: #444;
+  text-decoration: none;
 }
-
-.gallery img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 100%;
-    width: auto;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.gallery img.portrait {
-    width: 100%;
-    height: auto;
-}
-
-.desc {
-    display: block;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.album{
-  padding=50px;
-  margin-top= 50px;
-}
-
-.menu{
-  display:inline;
-  list-style:none;
-}
-
 a:hover {
-  text-decoration:underline;
-  color:green;
+  text-decoration: underline;
+  color: orange;
+}
+h2 {
+  color: green;
+}
+
+header {
+  background-color: #000; /* color black */
+  padding: 3%;
+}
+header .menu {
+  margin: 0;
+  list-style: none;
+}
+header .menu li {
+  display: inline;
+  margin-right: 2em;
+}
+header .menu li:last-child {
+  margin-right: 0;
+}
+header .menu li a {
+  color: white;
+}
+header .menu li a:hover {
+  color: yellow;
+}
+
+.product-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.product-cards .card {
+  width: 30%;
+}
+.product-cards .card h2 {
+  color: purple;
 }

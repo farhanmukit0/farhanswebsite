@@ -1,46 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-
-    <title>Hello World!</title>
-
-
-    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-    <meta
-      name="description"
-      content="A simple website, built with Glitch. Remix it to get your own."
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/af9c2444-e751-4f30-8174-61049513cb09%2Ffavicon-desktop-512.png?v=1627913937061"
     />
+    <title>Website Template Project</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://csa-project-template.glitch.me/" />
+    <meta name="description" content="A HTML/CSS website project template" />
     <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Hello World!" />
+    <meta property="og:title" content="Judi's CSA Project Template Website" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta property="og:url" content="https://csa-project-template.glitch.me/" />
     <meta
       property="og:description"
-      content="A simple website, built with Glitch. Remix it to get your own."
+      content="A simple website, built with basic HTML and CSS."
     />
     <meta
       property="og:image"
-      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+      content="https://cdn.glitch.com/af9c2444-e751-4f30-8174-61049513cb09%2Ffavicon-desktop-512.png?v=1627913937061"
     />
     <meta name="twitter:card" content="summary" />
+    <!-- 
+Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
+https://necolas.github.io/normalize.css/
+https://cdnjs.com/libraries/normalize 
+-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="/style.css" />
-
-
-    <script src="/script.js" defer></script>
+    <!-- Import the webpage's stylesheet -->
+    <!-- External CSS - style.css     -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <ul class="menu">
-        <li><a href="#">option 1</a></li>
-        <li><a href="#">option 2</a></li>
-        <li><a href="#">option 3</a></li>
-        <li><a href="#">option 4</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>
+          Project name
+        </h1>
+        <p>
+          Text goes here!
+        </p>
+      </div>
+
+      <div class="product-cards">
+        <div class="card">
+          <img
+            src="https://picsum.photos/id/1015/200"
+            alt="product placeholder image"
+          />
+          <h2>
+            Product Title 1
+          </h2>
+          <p>
+            product detail 1
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://picsum.photos/id/100/200"
+            alt="product placeholder image"
+          />
+          <h2>
+            Product Title2
+          </h2>
+          <p>
+            product detail 2
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://picsum.photos/id/1000/200"
+            alt="product placeholder image"
+          />
+          <h2>
+            Product Title 3
+          </h2>
+          <p>
+            product detail 3
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://picsum.photos/id/1001/200"
+            alt="product placeholder image"
+          />
+          <h2>
+            Product Title 4
+          </h2>
+          <p>
+            product detail 4
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://picsum.photos/id/1025/200"
+            alt="product placeholder image"
+          />
+          <h2>
+            Product Title 5
+          </h2>
+          <p>
+            product detail 5
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://picsum.photos/id/103/200"
+            alt="product placeholder image"
+          />
+          <h2>
+            Product Title 6
+          </h2>
+          <p>
+            product detail 6
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
