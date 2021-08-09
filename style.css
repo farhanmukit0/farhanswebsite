@@ -73,3 +73,32 @@ border-style: solid;
 border-width: 12px;
 color:navy;
 }
+
+
+#cheesecake{
+  color:rgb(255, 170, 0);background-color:rgb(255, 239, 204);position:relative;top:-135px;right:-200px;
+}
+
+#cheesecakepic{
+  height:250px;position:relative;right:160px;
+}
+
+#juniorslogo{
+  height:80px;position:relative;top:-150px;right:100px;
+}
+
+#ramen{
+  color:rgb(179, 0, 0);background-color:rgb(255, 179, 179);position:relative;top:-120px;
+}
+
+#ramenpic{
+  height:250px;margin-left:80px;
+}
+
+#chips{
+  font-size:24px;font-margin-left:150px;position:relative;top:-120px;background-color:rgb(204, 221, 255);
+}
+
+#chipspic{
+  height:250px;margin-left:100px;margin-right:50px;
+}
