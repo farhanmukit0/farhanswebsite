@@ -1,27 +1,30 @@
-/*
-This is your site JavaScript code - you can add interactivity and carry out processing
-- Initially the JS writes a message to the console, and moves a button you can add from the README
-*/
 
-// Print a message in the browser's dev tools console each time the page loads
-// Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
+function addPrices() {
 
-/* 
-Make the "Click me!" button move when the visitor clicks it:
-- First add the button to the page by following the "Next steps" in the README
-*/
-const btn = document.querySelector("button"); // Get the button from the page
-// Detect clicks on the button
-if (btn) {
-  btn.onclick = function() {
-    // The JS works in conjunction with the 'dipped' code in style.css
-    btn.classList.toggle("dipped");
-  };
+var x = 0;
+var y = 0;
+var z = 0;
+var priceTotal;
+
+var checkboxeschips = document.querySelector(`input[value="Kettle Cooked Chips"]:checked`);
+var checkboxesramen = document.querySelector(`input[value="Ramen Noodles"]:checked`);
+var checkboxescake = document.querySelector(`input[value="Junior's Cheesecake"]:checked`);
+
+if (checkboxeschips) {
+  x = x+3.32;
+} 
+if (checkboxesramen){
+  y =  y+0.5;
 }
+if (checkboxescake){
+  z = z+9.95;
+} 
 
-// This is a single line JS comment
-/*
-This is a comment that can span multiple lines 
-- use comments to make your own notes!
-*/
+priceTotal = x+y+z;
+
+console.log(priceTotal);
+
+document.getElementById("totalprice").innerHTML = priceTotal;
+
+
+}
