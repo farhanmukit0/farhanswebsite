@@ -65,3 +65,11 @@ header .menu li a:hover {
 .homework {
   color: #C89D7C
 }
+
+heading{
+padding: 10px;
+font-weight: bold;
+border-style: solid;
+border-width: 12px;
+color:navy;
+}
