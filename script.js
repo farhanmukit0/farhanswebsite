@@ -48,3 +48,4 @@ function checkboxes() {
      " Click the picture to buy!");
   });
 }
+
