@@ -28,3 +28,23 @@ document.getElementById("totalprice").innerHTML = priceTotal;
 
 
 }
+
+
+function getSelectedCheckboxValues(name) {
+  const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+  let values = [];
+  checkboxes.forEach((checkbox) => {
+    values.push(checkbox.value);
+  });
+  return values;
+}
+
+
+function checkboxes() {
+  
+  const btn = document.querySelector('#btn');
+  btn.addEventListener('click', (event) => {
+    alert("You Chose: " + getSelectedCheckboxValues('Foods') +  
+     " Click the picture to buy!");
+  });
+}
